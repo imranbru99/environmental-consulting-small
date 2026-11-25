@@ -26,9 +26,9 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
-            ->brandName('Aldercrest Environmental')
+            ->brandName('VerdantRidge Env')
             ->colors([
-                'primary' => Color::hex('#1F7A5C'),
+                'primary' => Color::hex('#2d8a5e'),
                 'gray' => Color::Slate,
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')

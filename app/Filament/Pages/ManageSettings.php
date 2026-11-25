@@ -29,10 +29,10 @@ class ManageSettings extends Page implements HasForms
     public function mount(): void
     {
         $this->form->fill([
-            'company_name' => Setting::getValue('company_name', 'Aldercrest Environmental'),
-            'company_phone' => Setting::getValue('company_phone', '(503) 555-0188'),
-            'company_email' => Setting::getValue('company_email', 'hello@aldercrestenvironmental.com'),
-            'whatsapp' => Setting::getValue('whatsapp', '15035550188'),
+            'company_name' => Setting::getValue('company_name', 'VerdantRidge Environmental Advisors'),
+            'company_phone' => Setting::getValue('company_phone', '(503) 555-0142'),
+            'company_email' => Setting::getValue('company_email', 'hello@verdantridgeenv.com'),
+            'whatsapp' => Setting::getValue('whatsapp', '15035550142'),
             'service_area' => Setting::getValue('service_area', 'Portland, Beaverton, Hillsboro, Vancouver WA & Willamette Valley'),
             'tax_rate' => Setting::getValue('tax_rate', '0.00'),
         ]);

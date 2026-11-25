@@ -1,22 +1,23 @@
 @extends('layouts.app')
-@section('title', 'Environmental Consulting Services')
-@section('meta_description', 'Phase I/II ESAs, wetland delineation, stormwater/SPCC, remediation oversight, NEPA/SEPA support, and vapor screening from Aldercrest Environmental.')
+@section('title', 'VerdantRidge Services')
 @section('content')
 <section class="section">
     <div class="wrap">
         <h2>Services</h2>
-        <p class="lede">Aldercrest supports due diligence, wetlands, stormwater, remediation, and indoor surveys with Portland-area field teams.</p>
+        <p class="lede">From ASTM Phase I ESAs to wet-season SWPPP monitoring — advisory packages sized for developers, manufacturers, and municipal clients.</p>
         <div class="grid-3">
             @foreach([
-                ['phase-i-esa','Phase I ESA','https://images.unsplash.com/photo-1425913397330-cfb49202dff3?auto=format&fit=crop&w=1200&q=80'],
-                ['phase-ii-investigation','Phase II Soil & Groundwater','https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80'],
-                ['stormwater-compliance','Stormwater & SPCC','https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=1200&q=80'],
-                ['remediation-oversight','Remediation Oversight','https://images.unsplash.com/photo-1581094794329-cd11d7054d3d?auto=format&fit=crop&w=1200&q=80'],
-                ['nepa-sepa-support','NEPA / SEPA Support','https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80'],
-                ['vapor-indoor-screening','Vapor & Indoor Air Screening','https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80'],
-                ['wetland-delineation','Wetland Delineation','https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80'],
+                ['phase-i-esa','Phase I Environmental Site Assessment','https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80'],
+                ['phase-ii-investigation','Phase II Site Investigation','https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1600&q=80'],
+                ['stormwater-swppp','Stormwater SWPPP & Monitoring','https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1600&q=80'],
+                ['wetland-delineation','Wetland Delineation','https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1600&q=80'],
+                ['air-quality-assessment','Air Quality Assessment','https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=1600&q=80'],
+                ['compliance-audit','Environmental Compliance Audit','https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80'],
             ] as [$slug,$title,$img])
-                <a class="service-tile" href="{{ route('services.show', $slug) }}"><img src="{{ $img }}" alt="{{ $title }}"><div class="pad"><h3>{{ $title }}</h3></div></a>
+                <a class="service-tile" href="{{ route('services.show', $slug) }}">
+                    <img src="{{ $img }}" alt="{{ $title }}">
+                    <div class="pad"><h3>{{ $title }}</h3></div>
+                </a>
             @endforeach
         </div>
     </div>

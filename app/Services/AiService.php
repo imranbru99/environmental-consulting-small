@@ -13,7 +13,7 @@ class AiService
   0 => 
   array (
     'q' => 'phase i esa assessment recognized environmental condition rec lender',
-    'a' => 'A Phase I ESA reviews records, interviews, and a site walk to identify recognized environmental conditions. Aldercrest delivers ASTM-aligned opinions for Portland lenders and buyers — call (503) 555-0188 to schedule.',
+    'a' => 'A Phase I ESA reviews records, interviews, and a site walk to identify recognized environmental conditions. VerdantRidge delivers ASTM-aligned opinions for Portland lenders and buyers — call (503) 555-0142 to schedule.',
   ),
   1 => 
   array (
@@ -43,7 +43,7 @@ class AiService
   6 => 
   array (
     'q' => 'schedule quote portland beaverton hillsboro vancouver cost price',
-    'a' => 'Call (503) 555-0188, use the contact form, or WhatsApp us. We serve Portland, Beaverton, Hillsboro, Vancouver WA, and the Willamette Valley. Pricing depends on acreage, media, and turnaround.',
+    'a' => 'Call (503) 555-0142, use the contact form, or WhatsApp us. We serve Portland, Beaverton, Hillsboro, Vancouver WA, and the Willamette Valley. Pricing depends on acreage, media, and turnaround.',
   ),
   7 => 
   array (
@@ -128,7 +128,7 @@ class AiService
             return $best;
         }
 
-        return 'Thanks for reaching Aldercrest Environmental. We provide Phase I/II ESAs, stormwater SWPPP, wetland delineation, air quality assessments, and compliance audits across Portland and the Pacific Northwest. Ask about scope, timelines, or scheduling—or call (503) 555-0188.';
+        return 'Thanks for reaching VerdantRidge Environmental Advisors. We provide Phase I/II ESAs, stormwater SWPPP, wetland delineation, air quality assessments, and compliance audits across Portland and the Pacific Northwest. Ask about scope, timelines, or scheduling—or call (503) 555-0142.';
     }
 
     protected function callOpenAi(string $message, string $key): string
@@ -140,7 +140,7 @@ class AiService
                 'messages' => [
                     [
                         'role' => 'system',
-                        'content' => 'You are the Aldercrest Environmental assistant for a Portland, OR environmental consulting SME. Be concise and practical about Phase I/II ESAs, stormwater SWPPP, wetland delineation, air quality, compliance audits, and scheduling. Never invent illegal claims or regulatory guarantees.',
+                        'content' => 'You are the VerdantRidge Environmental Advisors assistant for a Portland, OR environmental consulting SME. Be concise and practical about Phase I/II ESAs, stormwater SWPPP, wetland delineation, air quality, compliance audits, and scheduling. Never invent illegal claims or regulatory guarantees.',
                     ],
                     ['role' => 'user', 'content' => $message],
                 ],
@@ -160,7 +160,7 @@ class AiService
                 'contents' => [
                     [
                         'parts' => [
-                            ['text' => "Aldercrest Environmental assistant (Portland / Pacific Northwest environmental consulting). Answer briefly:
+                            ['text' => "VerdantRidge Environmental Advisors assistant (Portland / Pacific Northwest environmental consulting). Answer briefly:
 {$message}"],
                         ],
                     ],

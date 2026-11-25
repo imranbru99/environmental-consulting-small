@@ -1,4 +1,4 @@
-# Aldercrest Environmental — Laravel 13 + Filament 3 Website, ERP & AI
+# VerdantRidge Environmental Advisors — Laravel 13 + Filament 3 Website, ERP & AI
 
 Production-ready SME platform for a Portland / Pacific Northwest **environmental consulting** firm: public marketing site, Filament admin ERP, knowledge base, and AI assistants for chat, content, automation ideas, and troubleshooting.
 
@@ -20,7 +20,7 @@ Production-ready SME platform for a Portland / Pacific Northwest **environmental
 - Laravel 13
 - Filament 3
 - Livewire + Alpine.js
-- Tailwind-friendly public CSS (custom Aldercrest theme)
+- Tailwind-friendly public CSS (custom VerdantRidge theme)
 - MySQL or SQLite
 - Spatie Laravel Permission
 - OpenAI API with Gemini fallback keys (demo FAQ mode when keys are empty)
@@ -42,17 +42,17 @@ Admin ERP: `http://localhost:8000/admin` — `admin@example.com` / `password`
 Optional AI keys in `.env`: `OPENAI_API_KEY` or `GEMINI_API_KEY`.
 
 ## Screenshots / Visual Dashboard
-![Aldercrest hero](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80)
-![Aldercrest field](https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1400&q=80)
-![Aldercrest detail](https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1400&q=80)
-![Aldercrest ops](https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1400&q=80)
+![VerdantRidge hero](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80)
+![VerdantRidge field](https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1400&q=80)
+![VerdantRidge detail](https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1400&q=80)
+![VerdantRidge ops](https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1400&q=80)
 
 ## Live Demo
 Placeholder — deploy to your preferred host (Forge, Vapor, shared PHP) and update this section with the public URL.
 
 ## SEO-optimized repo description
 ```
-Aldercrest Environmental — Laravel 13 + Filament 3 website, ERP & AI for a Portland environmental consulting SME (ESAs, wetlands, SWPPP, chatbot).
+VerdantRidge Environmental Advisors — Laravel 13 + Filament 3 website, ERP & AI for a Portland environmental consulting SME (ESAs, wetlands, SWPPP, chatbot).
 ```
 
 ---

@@ -31,36 +31,36 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Admin',
                 'password' => Hash::make('password'),
                 'role' => 'admin',
-                'phone' => '(503) 555-0188',
+                'phone' => '(503) 555-0142',
             ]
         );
         $admin->syncRoles(['admin']);
 
         User::query()->updateOrCreate(
-            ['email' => 'manager@aldercrestenvironmental.com'],
+            ['email' => 'manager@verdantridgeenv.com'],
             [
                 'name' => 'Aisha Rahman',
                 'password' => Hash::make('password'),
                 'role' => 'manager',
-                'phone' => '(503) 555-0188',
+                'phone' => '(503) 555-0142',
             ]
         )->syncRoles(['manager']);
 
         User::query()->updateOrCreate(
-            ['email' => 'field@aldercrestenvironmental.com'],
+            ['email' => 'field@verdantridgeenv.com'],
             [
                 'name' => 'Cole Whitaker',
                 'password' => Hash::make('password'),
                 'role' => 'staff',
-                'phone' => '(503) 555-0188',
+                'phone' => '(503) 555-0142',
             ]
         )->syncRoles(['staff']);
 
         $settings = [
-            'company_name' => 'Aldercrest Environmental',
-            'company_phone' => '(503) 555-0188',
-            'company_email' => 'hello@aldercrestenvironmental.com',
-            'whatsapp' => '15035550188',
+            'company_name' => 'VerdantRidge Environmental Advisors',
+            'company_phone' => '(503) 555-0142',
+            'company_email' => 'hello@verdantridgeenv.com',
+            'whatsapp' => '15035550142',
             'service_area' => 'Portland, Beaverton, Hillsboro, Vancouver WA & Willamette Valley',
             'tax_rate' => '0.00',
         ];
@@ -277,7 +277,7 @@ class DatabaseSeeder extends Seeder
                     'final_amount' => $p['final_amount'] ?? null,
                     'start_date' => now()->subDays(10 - $i)->toDateString(),
                     'site_address' => trim(($customer->address ?? '').', '.$customer->city.', '.$customer->state),
-                    'notes' => 'Seeded demo environmental consulting engagement for Aldercrest ERP. sq_ft stores site area where relevant.',
+                    'notes' => 'Seeded demo environmental consulting engagement for VerdantRidge ERP. sq_ft stores site area where relevant.',
                 ]
             );
         }
@@ -344,7 +344,7 @@ class DatabaseSeeder extends Seeder
     'title' => 'When a Portland Property Needs a Phase I ESA',
     'excerpt' => 'Lender requirements, REC red flags, and how a scoped Phase I protects Willamette Valley deals.',
     'cover' => 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80',
-    'body' => 'Most commercial closings in Portland still hinge on a clean Phase I. Aldercrest maps historical uses, walks the site, and writes an opinion lenders can underwrite.
+    'body' => 'Most commercial closings in Portland still hinge on a clean Phase I. VerdantRidge maps historical uses, walks the site, and writes an opinion lenders can underwrite.
 
 If RECs appear, we size Phase II so you are not oversampling empty dirt — or undersampling the one tank pit that matters.',
   ),
@@ -391,13 +391,13 @@ If RECs appear, we size Phase II so you are not oversampling empty dirt — or u
   array (
     'category' => 'issues',
     'title' => 'Stormwater BMP failing after heavy rain',
-    'body' => 'Stabilize slopes, replace clogged inlet protection, re-seed bare soil, and update the SWPPP inspection log the same day. Call Aldercrest if turbidity exceeds permit thresholds.',
+    'body' => 'Stabilize slopes, replace clogged inlet protection, re-seed bare soil, and update the SWPPP inspection log the same day. Call VerdantRidge if turbidity exceeds permit thresholds.',
   ),
   2 => 
   array (
     'category' => 'guides',
     'title' => 'How to prepare for a Phase I site walk',
-    'body' => 'Unlock mechanical rooms and yard access. Gather prior Phase I/II reports, ASTs/USTs paperwork, and spill logs. Walk Aldercrest through known fill areas and tenant operations.',
+    'body' => 'Unlock mechanical rooms and yard access. Gather prior Phase I/II reports, ASTs/USTs paperwork, and spill logs. Walk VerdantRidge through known fill areas and tenant operations.',
   ),
   3 => 
   array (

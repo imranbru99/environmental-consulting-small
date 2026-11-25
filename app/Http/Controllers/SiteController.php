@@ -57,7 +57,7 @@ class SiteController extends Controller
 
         ContactMessage::query()->create($data);
 
-        return back()->with('success', 'Thanks! Aldercrest will follow up within one business day.');
+        return back()->with('success', 'Thanks! VerdantRidge will follow up within one business day.');
     }
 
     public function blog(): View
@@ -108,7 +108,7 @@ class SiteController extends Controller
   array (
     'title' => 'Phase I Environmental Site Assessment',
     'summary' => 'ASTM-aligned records review, site reconnaissance, and recognized environmental condition screening.',
-    'body' => 'Aldercrest delivers Phase I ESAs for Portland lenders, buyers, and developers — historical records, regulatory databases, interviews, and a clear REC opinion so transactions move without surprise liabilities.',
+    'body' => 'VerdantRidge delivers Phase I ESAs for Portland lenders, buyers, and developers — historical records, regulatory databases, interviews, and a clear REC opinion so transactions move without surprise liabilities.',
     'image' => 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80',
   ),
   'phase-ii-investigation' => 
@@ -136,7 +136,7 @@ class SiteController extends Controller
   array (
     'title' => 'Air Quality Assessment',
     'summary' => 'Indoor and ambient screening for VOCs, particulates, and industrial emission concerns.',
-    'body' => 'From warehouse odor complaints to small industrial stack questions, Aldercrest designs practical sampling plans and translates lab data into actionable recommendations.',
+    'body' => 'From warehouse odor complaints to small industrial stack questions, VerdantRidge designs practical sampling plans and translates lab data into actionable recommendations.',
     'image' => 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=1600&q=80',
   ),
   'compliance-audit' => 

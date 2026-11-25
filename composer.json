@@ -2,7 +2,7 @@
     "$schema": "https://getcomposer.org/schema.json",
     "name": "laravel/laravel",
     "type": "project",
-    "description": "Aldercrest Environmental \u2014 Laravel 13 + Filament 3 environmental consulting website, ERP, and AI.",
+    "description": "VerdantRidge Environmental Advisors \u2014 Laravel 13 + Filament 3 environmental consulting website, ERP, and AI.",
     "keywords": [
         "laravel",
         "framework"
